@@ -4,8 +4,8 @@
          https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>devops-demo</artifactId>
+    <groupId>artifact</groupId>
+    <artifactId>Manjuapp</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -15,11 +15,11 @@
     </properties>
 
     <build>
-        <finalName>devops-demo-1.0</finalName>
+        <finalName>Manjuapp-1.0</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
+                <artifactId>maven-war-plugin</artifactId>
                 <version>3.4.2</version>
                 <configuration>
                     <archive>
