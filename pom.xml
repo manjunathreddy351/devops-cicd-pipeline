@@ -7,7 +7,7 @@
 
     <groupId>artifact</groupId>
     <artifactId>Manjuapp</artifactId>
-    <version>1.3</version>
+    <version>1.4</version>
 
     <packaging>war</packaging>
 
