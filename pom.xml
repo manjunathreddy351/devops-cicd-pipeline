@@ -2,13 +2,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
          https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>artifact</groupId>
     <artifactId>Manjuapp</artifactId>
     <version>1.0</version>
 
-         <packaging>war</packaging>
+    <packaging>war</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -18,12 +19,16 @@
 
     <build>
         <finalName>Manjuapp-1.0</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.4.0</version>
+
                 <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+
                     <archive>
                         <manifest>
                             <mainClass>com.example.App</mainClass>
@@ -33,4 +38,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
